@@ -9,7 +9,7 @@ class User(db.Model):
     first_name = db.Column(db.String(30), nullable=False)
     last_name = db.Column(db.String(30), nullable=False)
     email = db.Column(db.String(40), nullable=False)
-    password = db.Column(db.String(30), nullable=False)
+    password = db.Column(db.String(150), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow())
 
     def __repr__(self):
